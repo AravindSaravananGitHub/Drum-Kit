@@ -13,7 +13,10 @@ kits.forEach((kit) => {
   container.appendChild(audio);
 
   btn.addEventListener("click", () => {
-    audio.play();
+   audio.pause();
+    setTimeout(() => {
+      audio.play();
+    }, 400);
   });
 
   window.addEventListener("keydown", (e) => {
