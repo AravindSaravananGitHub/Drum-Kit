@@ -14,9 +14,7 @@ kits.forEach((kit) => {
 
   btn.addEventListener("click", () => {
    audio.pause();
-    setTimeout(() => {
-      audio.play();
-    }, 400);
+    audio.play();
   });
 
   window.addEventListener("keydown", (e) => {
